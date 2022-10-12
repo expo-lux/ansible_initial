@@ -24,3 +24,9 @@
       name:
         - forkstat  
         - python3-psycopg2
+        - python3-pip
+
+  - name: Install lxml python package
+    ansible.builtin.pip:
+      name: lxml>=2.3.0
+
