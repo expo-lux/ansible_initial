@@ -27,6 +27,10 @@
   - name: Set timezone 
     community.general.timezone:
       name: Europe/Moscow
+    notify: restart rsyslog
+    
+  - name: Flush handlers
+    meta: flush_handlers
 
 
 
